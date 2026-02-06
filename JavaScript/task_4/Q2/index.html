@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Table</title>
+
+    <style>
+    .done {
+        text-decoration: line-through;
+        color: rgb(190, 136, 8);
+    }
+    table {
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    th, td {
+        border: 1px solid rgb(13, 94, 108);
+        padding: 8px;
+        color: #08458f;
+    }
+    </style>
+</head>
+<body>
+
+    <h2>Todo List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter task...">
+        <button onclick="addTask()">Add</button>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="taskTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

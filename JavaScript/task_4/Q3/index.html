@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #9face6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .slider {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    img {
+        width: 500px;
+        height: 300px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 8px 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        color: white;
+    }
+
+    .prev { background-color: #852f2f; }
+    .next { background-color: #026347; }
+    .reset { background-color: #044374; }
+
+    button:hover {
+        opacity: 0.8;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+    <img id="sliderImage" src="" alt="slider">
+
+    <div>
+        <button class="prev" onclick="prevImage()">Previous</button>
+        <button class="reset" onclick="resetImage()">Reset</button>
+        <button class="next" onclick="nextImage()">Next</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

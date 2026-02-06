@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Students</h2>
+
+        <input type="text" id="name" placeholder="student name...">
+        <input type="number" id="age" placeholder="student age...">
+        <input type="text" id="grade" placeholder="student grade...">
+
+        <button onclick="addStudent()">Add student</button>
+
+    <table border="1" style="margin-top:10px;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
