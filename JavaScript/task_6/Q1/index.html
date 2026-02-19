@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Manager</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #7ebaeb;">
+
+    <h2 style="color: #e72802;">Student Manager</h2>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age"><br><br>
+
+    <label for="grade">Grade:</label><br>
+    <input type="text" id="grade"><br><br>
+
+    <button onclick="addStudent()" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px;">Add Student</button>
+    <button onclick="saveJSON()" style="background-color: #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 4px;">Save to JSON</button>
+    <button onclick="loadJSON()" style="background-color: #FF9800; color: white; padding: 10px 20px; border: none; border-radius: 4px;">Load from JSON</button>
+
+    <br><br>
+
+    <textarea id="jsonData" rows="5" cols="50" placeholder="JSON Data"></textarea>
+
+    <h3 style="color: #0e3f68;">Students List</h3>
+
+<table border="1" style="width: 40%; border-color: #22282e;">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+    </tr>
+    </thead>
+
+    <tbody id="studentTable">
+    
+    </tbody>
+</table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
