@@ -1,0 +1,74 @@
+# MongoDB Library System
+
+## Part 1
+Database: libraryDB  
+Collections: users, books  
+
+---
+
+## Part 2
+
+### Users
+{ "name": "Nada", "age": 22, "role": "admin" }
+{ "name": "Ali", "age": 19, "role": "user" }
+{ "name": "Sara", "age": 25, "role": "admin" }
+{ "name": "Omar", "age": 17 }
+{ "name": "Mona", "age": 30, "role": "user" }
+
+### Books
+{ "title": "Mongo Basics", "pages": 150 }
+{ "title": "Node.js Guide", "pages": 220 }
+{ "title": "C# Advanced", "pages": 300 }
+{ "title": "JavaScript Intro", "pages": 120 }
+
+---
+
+## Part 3
+
+1.
+{ "age": { "$gt": 21 } }
+
+2.
+{
+  "$or": [
+    { "role": "admin" },
+    { "age": { "$lt": 20 } }
+  ]
+}
+
+3.
+{ "age": { "$gte": 20, "$lte": 30 } }
+
+4.
+{ "role": { "$exists": false } }
+
+5.
+{ "pages": { "$gt": 200 } }
+
+6.
+{
+  "$or": [
+    { "title": "Mongo Basics" },
+    { "pages": { "$lt": 180 } }
+  ]
+}
+
+7.
+Filter: {}
+Project: { "title": 1, "pages": 1, "_id": 0 }
+Sort: { "pages": -1 }
+Limit: 2
+
+8.
+Filter: { "age": { "$lt": 21 } }
+Update: { "$inc": { "age": 1 } }
+
+9.
+Filter: { "role": "admin" }
+Update: { "$set": { "isActive": true } }
+
+10.
+{ "age": { "$lt": 18 } }
+
+11.
+{ "pages": { "$lt": 150 } }
